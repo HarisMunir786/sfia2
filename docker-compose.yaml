@@ -1,0 +1,35 @@
+version: "3.7"
+services:
+  service1:
+    build: ./service1
+    ports:
+    - target: 5000
+      published: 5000
+    environment:
+    - SECRET_KEY="lkjflsajflksajflasfjsajrawjrfkla456434adfasdrfawerfafgag"
+    - DATABASE_URI=mysql+pymysql://root:sfia&project1and2@35.246.85.220/sfia2
+
+  service2:
+    build: ./service2
+    ports:
+    - target: 5000
+    environment:
+    - SECRET_KEY="lkjflsajflksajflasfjsajrawjrfkla456434adfasdrfawerfafgag"
+    - DATABASE_URI=mysql+pymysql://root:sfia&project1and2@35.246.85.220/sfia2
+
+  service3:
+    build: ./service3
+    ports:
+    - target: 5000
+    environment:
+    - SECRET_KEY="lkjflsajflksajflasfjsajrawjrfkla456434adfasdrfawerfafgag"
+    - DATABASE_URI=mysql+pymysql://root:sfia&project1and2@35.246.85.220/sfia2
+
+  service4:
+    build: ./service4
+    ports:
+    - target: 5000
+    environment:
+    - SECRET_KEY="lkjflsajflksajflasfjsajrawjrfkla456434adfasdrfawerfafgag"
+    - DATABASE_URI=mysql+pymysql://root:sfia&project1and2@35.246.85.220/sfia2
+
